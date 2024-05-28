@@ -1,0 +1,513 @@
+/*RESET CSS */
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    list-style-type: none;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: galano-grotesque;
+}
+/*cONTAINER */
+
+#container {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pointer {
+
+    cursor: pointer;
+
+}
+
+/*HEADER */
+
+header {
+    background-color: white;
+    height: 13vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* header 1 */
+#header1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo {
+    height: 5vh;
+}
+
+/* header 2 */
+#header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+
+/* header 3 */
+#header3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#buttonred {
+    background-color: #EC1C24;
+    padding: 0.7em 1.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: galano-grotesque;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.headermob {
+    display: none;
+}
+
+
+/* CONTENT */
+
+/* CONTENT 1*/
+#hotel {
+    width: 100%;
+    max-width: auto;
+    min-height: 100vh;
+    background-image: url("assets/img/ff87c246dece53f7a6e6f8ebbf66adb1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(19, 29, 59, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.label2 {
+    font: normal 5rem galano-grotesque;
+}
+
+#Challenge {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    font: normal 2rem galano-grotesque;
+}
+
+
+/* CONTENT 2*/
+
+.contentarea{
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0%;
+    gap: 5rem;
+    background-color: white
+
+}
+
+.contentarea .label{
+
+    color: #131D3B;
+    font-size: 4rem;
+}
+
+
+.cards{
+
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+
+#bluearea{
+
+    width: 40vw;
+    height: 35vh;
+    background-color: #131D3B;
+    padding: 5%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redarea{
+
+    width: 20vw;
+    height: 35vh;
+    background-color: #EC1C24;
+    color:  white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.textarea {
+
+    font-size: 2.5rem;
+
+}
+
+
+.about {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: auto;
+    height: auto;
+    overflow: visible;
+
+}
+
+.about-box {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20vw;
+    height: 20vh;
+    max-height: auto;
+    overflow: visible;
+}
+
+
+
+.about-title {
+    font-size: 2.5rem;
+    color: #131D3B;
+
+}
+
+.about-text{
+
+    font-size: 1.5rem;
+
+}
+
+.viewmore{
+
+    color: red;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* CONTENT 3*/
+
+.content3 {
+    position: relative;
+    width: 100%; /* Ajuste conforme necessário */
+    height: 70vh; /* Ajuste conforme necessário */
+    margin-top: 20px;
+}
+
+#img3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a div */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Filtro preto semi-transparente */
+}
+
+
+/* MEDIAS QUERYS */
+
+@media (max-width: 1440px) {
+
+
+ .about {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+        width: auto;
+        height: 40vh;                      
+    
+        
+    }
+
+
+
+
+}
+@media (max-width: 1024px) {
+    #header2 {
+        display: none;
+    }
+
+    .headermob {
+        display: block;
+    }
+
+    #buttonred {
+        background-color: #EC1C24;
+        padding: 0.7em 1.5em;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: galano-grotesque;
+        font-size: 1rem;
+        white-space: nowrap;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    .textarea {
+    
+        font-size: 1.8rem;
+    
+    }
+
+     
+    .about {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+        width: auto;
+        height: 60vh;                      
+    
+        
+    }
+
+}
+@media (max-width: 768px){
+
+
+    #bluearea{
+
+        width: 40vw;
+        height: 35vh;
+        background-color: #131D3B;
+        padding: 10% 5%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #redarea{
+    
+        width: 20vw;
+        height: 35vh;
+        background-color: #EC1C24;
+        color:  white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .textarea {
+    
+        font-size: 1.2rem;
+    
+    }
+
+    #buttonred {
+        background-color: #EC1C24;
+        padding: 0.7em 1.5em;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: galano-grotesque;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    .about {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+        width: auto;
+        height: 90vh;                      
+    
+        
+    }
+
+
+}
+
+
+@media (max-width: 425px) {
+    #header2 {
+        display: none;
+    }
+
+    .headermob {
+        display: block;
+    }
+
+    #logo {
+        height: 1.3rem;
+    }
+
+    #buttonred {
+        font-size: 0.5rem;
+    }
+
+    header {
+        height: 13vh;
+        padding: 0 5%;
+    }
+
+    .label2 {
+        font: normal 2rem galano-grotesque;
+
+    }
+
+     .textarea {
+    
+        font-size: 0.9rem;
+        
+    
+    }
+    .contentarea .label{
+
+        color: #131D3B;
+        font-size: 2rem;
+    }
+    
+    .about {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+        width: auto;
+        height: 60vh;                      
+    
+        
+    }
+    
+    .about-box {
+    
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        width: 20vw;
+        height: 10vh;
+    }
+    
+    
+    
+    .about-title {
+        font-size: 1.5rem;
+        color: #131D3B;
+    
+    }
+    
+    .about-text{
+    
+        font-size: 0.8rem;
+    
+    }
+    
+    .viewmore{
+    
+        color: red;
+        font-size: 1.0rem;
+        cursor: pointer;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+
+
+    .textarea {
+    
+        font-size: 0.7rem;
+        
+    
+    }
+
+
+     
+    .about {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+        width: auto;
+        height: 70vh;                      
+    
+        
+    }
+
+}
